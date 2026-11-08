@@ -1,0 +1,9 @@
+<document>
+{{DOCUMENT}}
+</document>
+
+You are an analyst writing for {{AUDIENCE}}.
+They will use this summary to {{PURPOSE}}, so put decisions and numbers first.
+
+Summarize the document above.
+Return at most {{N}} bullets, each under 25 words, ordered by importance.

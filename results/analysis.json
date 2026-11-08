@@ -1,0 +1,647 @@
+{
+ "rules": [
+  {
+   "key": "role",
+   "name": "Gives a role",
+   "weight": 1,
+   "source": "Give Claude a role"
+  },
+  {
+   "key": "task",
+   "name": "States the task with a clear verb",
+   "weight": 2,
+   "source": "Be clear and direct"
+  },
+  {
+   "key": "why",
+   "name": "Explains the purpose or audience",
+   "weight": 2,
+   "source": "Add context to improve performance"
+  },
+  {
+   "key": "format",
+   "name": "Specifies the output format",
+   "weight": 2,
+   "source": "Control the format of responses"
+  },
+  {
+   "key": "length",
+   "name": "Sets length or other limits",
+   "weight": 1,
+   "source": "Be clear and direct"
+  },
+  {
+   "key": "examples",
+   "name": "Includes examples",
+   "weight": 1,
+   "source": "Use examples effectively"
+  },
+  {
+   "key": "structure",
+   "name": "Uses XML tags for structure",
+   "weight": 1,
+   "source": "Structure prompts with XML tags"
+  },
+  {
+   "key": "positive",
+   "name": "Says what to do, not only what not to do",
+   "weight": 1,
+   "source": "Tell Claude what to do instead of what not to do"
+  },
+  {
+   "key": "data_first",
+   "name": "Puts long data before the question",
+   "weight": 2,
+   "source": "Long context prompting"
+  },
+  {
+   "key": "verify",
+   "name": "Asks for a self-check",
+   "weight": 1,
+   "source": "Leverage thinking"
+  },
+  {
+   "key": "specific",
+   "name": "Avoids vague words",
+   "weight": 1,
+   "source": "Be clear and direct"
+  }
+ ],
+ "rows": [
+  {
+   "task": "Summarize a report",
+   "kind": "general",
+   "score_before": 15.384615384615385,
+   "score_after": 100.0,
+   "tokens_before": 23,
+   "tokens_after": 74,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": false,
+    "examples": null,
+    "structure": false,
+    "positive": false,
+    "data_first": false,
+    "verify": null,
+    "specific": false
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": true,
+    "examples": null,
+    "structure": true,
+    "positive": true,
+    "data_first": true,
+    "verify": null,
+    "specific": true
+   },
+   "sections": {
+    "data": 9,
+    "role": 9,
+    "context": 21,
+    "task": 6,
+    "format": 29
+   }
+  },
+  {
+   "task": "Write a customer email",
+   "kind": "style",
+   "score_before": 36.36363636363637,
+   "score_after": 100.0,
+   "tokens_before": 19,
+   "tokens_after": 126,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": false,
+    "examples": false,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": null,
+    "specific": true
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": true,
+    "examples": true,
+    "structure": true,
+    "positive": true,
+    "data_first": true,
+    "verify": null,
+    "specific": true
+   },
+   "sections": {
+    "role": 11,
+    "context": 36,
+    "task": 18,
+    "format": 20,
+    "examples": 26,
+    "checks": 15
+   }
+  },
+  {
+   "task": "Write a Python function",
+   "kind": "code",
+   "score_before": 40.0,
+   "score_after": 100.0,
+   "tokens_before": 11,
+   "tokens_after": 111,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": null,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": false,
+    "specific": true
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": null,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": true,
+    "specific": true
+   },
+   "sections": {
+    "role": 7,
+    "context": 24,
+    "task": 13,
+    "format": 44,
+    "checks": 23
+   }
+  },
+  {
+   "task": "Extract data as JSON",
+   "kind": "extract",
+   "score_before": 14.285714285714286,
+   "score_after": 92.85714285714286,
+   "tokens_before": 12,
+   "tokens_after": 178,
+   "rules_before": {
+    "role": false,
+    "task": false,
+    "why": false,
+    "format": false,
+    "length": null,
+    "examples": false,
+    "structure": false,
+    "positive": true,
+    "data_first": false,
+    "verify": false,
+    "specific": true
+   },
+   "rules_after": {
+    "role": false,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": null,
+    "examples": true,
+    "structure": true,
+    "positive": true,
+    "data_first": true,
+    "verify": true,
+    "specific": true
+   },
+   "sections": {
+    "data": 11,
+    "context": 18,
+    "task": 9,
+    "format": 42,
+    "examples": 84,
+    "checks": 14
+   }
+  },
+  {
+   "task": "Translate a notice",
+   "kind": "general",
+   "score_before": 30.76923076923077,
+   "score_after": 92.3076923076923,
+   "tokens_before": 8,
+   "tokens_after": 82,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": false,
+    "examples": null,
+    "structure": false,
+    "positive": true,
+    "data_first": false,
+    "verify": null,
+    "specific": true
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": false,
+    "examples": null,
+    "structure": true,
+    "positive": true,
+    "data_first": true,
+    "verify": null,
+    "specific": true
+   },
+   "sections": {
+    "data": 10,
+    "role": 10,
+    "context": 21,
+    "task": 9,
+    "format": 32
+   }
+  },
+  {
+   "task": "Solve a math word problem",
+   "kind": "math",
+   "score_before": 45.45454545454545,
+   "score_after": 100.0,
+   "tokens_before": 29,
+   "tokens_after": 104,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": true,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": false,
+    "specific": true
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": true,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": true,
+    "specific": true
+   },
+   "sections": {
+    "role": 7,
+    "context": 21,
+    "task": 35,
+    "format": 26,
+    "checks": 15
+   }
+  },
+  {
+   "task": "Classify reviews",
+   "kind": "classify",
+   "score_before": 30.76923076923077,
+   "score_after": 92.3076923076923,
+   "tokens_before": 11,
+   "tokens_after": 102,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": null,
+    "examples": false,
+    "structure": false,
+    "positive": true,
+    "data_first": false,
+    "verify": null,
+    "specific": true
+   },
+   "rules_after": {
+    "role": false,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": null,
+    "examples": true,
+    "structure": true,
+    "positive": true,
+    "data_first": true,
+    "verify": null,
+    "specific": true
+   },
+   "sections": {
+    "data": 10,
+    "context": 19,
+    "task": 11,
+    "format": 10,
+    "examples": 52
+   }
+  },
+  {
+   "task": "Explain a lab experiment",
+   "kind": "general",
+   "score_before": 40.0,
+   "score_after": 100.0,
+   "tokens_before": 11,
+   "tokens_after": 87,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": false,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": null,
+    "specific": true
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": true,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": null,
+    "specific": true
+   },
+   "sections": {
+    "role": 11,
+    "context": 28,
+    "task": 22,
+    "format": 26
+   }
+  },
+  {
+   "task": "Write a SQL query",
+   "kind": "code",
+   "score_before": 20.0,
+   "score_after": 90.0,
+   "tokens_before": 4,
+   "tokens_after": 100,
+   "rules_before": {
+    "role": false,
+    "task": false,
+    "why": false,
+    "format": false,
+    "length": null,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": false,
+    "specific": true
+   },
+   "rules_after": {
+    "role": false,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": null,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": true,
+    "specific": true
+   },
+   "sections": {
+    "data": 24,
+    "context": 15,
+    "task": 21,
+    "format": 23,
+    "checks": 17
+   }
+  },
+  {
+   "task": "Write a product description",
+   "kind": "style",
+   "score_before": 36.36363636363637,
+   "score_after": 100.0,
+   "tokens_before": 20,
+   "tokens_after": 94,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": false,
+    "examples": false,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": null,
+    "specific": true
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": true,
+    "examples": true,
+    "structure": true,
+    "positive": true,
+    "data_first": null,
+    "verify": null,
+    "specific": true
+   },
+   "sections": {
+    "role": 10,
+    "context": 17,
+    "task": 27,
+    "format": 25,
+    "examples": 15
+   }
+  },
+  {
+   "task": "Review code",
+   "kind": "code",
+   "score_before": 30.76923076923077,
+   "score_after": 100.0,
+   "tokens_before": 7,
+   "tokens_after": 99,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": null,
+    "examples": null,
+    "structure": false,
+    "positive": true,
+    "data_first": false,
+    "verify": false,
+    "specific": true
+   },
+   "rules_after": {
+    "role": true,
+    "task": true,
+    "why": true,
+    "format": true,
+    "length": null,
+    "examples": null,
+    "structure": true,
+    "positive": true,
+    "data_first": true,
+    "verify": true,
+    "specific": true
+   },
+   "sections": {
+    "data": 11,
+    "role": 11,
+    "context": 16,
+    "task": 5,
+    "format": 43,
+    "checks": 13
+   }
+  },
+  {
+   "task": "Plan a study week",
+   "kind": "general",
+   "score_before": 30.0,
+   "score_after": 70.0,
+   "tokens_before": 14,
+   "tokens_after": 82,
+   "rules_before": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": false,
+    "length": false,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": null,
+    "specific": false
+   },
+   "rules_after": {
+    "role": false,
+    "task": true,
+    "why": false,
+    "format": true,
+    "length": true,
+    "examples": null,
+    "structure": null,
+    "positive": true,
+    "data_first": null,
+    "verify": null,
+    "specific": true
+   },
+   "sections": {
+    "context": 36,
+    "task": 8,
+    "format": 38
+   }
+  }
+ ],
+ "pass_rate": {
+  "role": {
+   "before": 0.0,
+   "after": 0.6666666666666666,
+   "applicable": 12
+  },
+  "task": {
+   "before": 0.8333333333333334,
+   "after": 1.0,
+   "applicable": 12
+  },
+  "why": {
+   "before": 0.0,
+   "after": 0.9166666666666666,
+   "applicable": 12
+  },
+  "format": {
+   "before": 0.0,
+   "after": 1.0,
+   "applicable": 12
+  },
+  "length": {
+   "before": 0.14285714285714285,
+   "after": 0.8571428571428571,
+   "applicable": 7
+  },
+  "examples": {
+   "before": 0.0,
+   "after": 1.0,
+   "applicable": 4
+  },
+  "structure": {
+   "before": 0.0,
+   "after": 1.0,
+   "applicable": 5
+  },
+  "positive": {
+   "before": 0.9166666666666666,
+   "after": 1.0,
+   "applicable": 12
+  },
+  "data_first": {
+   "before": 0.0,
+   "after": 1.0,
+   "applicable": 5
+  },
+  "verify": {
+   "before": 0.0,
+   "after": 1.0,
+   "applicable": 5
+  },
+  "specific": {
+   "before": 0.8333333333333334,
+   "after": 1.0,
+   "applicable": 12
+  }
+ },
+ "fails_before": {
+  "role": 12,
+  "why": 12,
+  "format": 12,
+  "length": 6,
+  "structure": 5,
+  "data_first": 5,
+  "verify": 5,
+  "examples": 4,
+  "specific": 2,
+  "task": 2,
+  "positive": 1
+ },
+ "sections": {
+  "data": 75,
+  "role": 76,
+  "context": 272,
+  "task": 184,
+  "format": 358,
+  "examples": 177,
+  "checks": 97
+ },
+ "mean_before": 30.846653346653344,
+ "mean_after": 94.78937728937728,
+ "tokens_before": 169,
+ "tokens_after": 1239
+}

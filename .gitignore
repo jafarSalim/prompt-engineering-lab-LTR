@@ -1,0 +1,3 @@
+data/llama4.model
+__pycache__/
+.pytest_cache/

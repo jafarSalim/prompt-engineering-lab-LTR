@@ -1,0 +1,7 @@
+You are a senior {{LANGUAGE}} developer.
+The code will run in {{WHERE}}, so it must be {{REQUIREMENT}}.
+
+Write {{FUNCTION_SIGNATURE}} that {{BEHAVIOR}}.
+Return the code in one block with type hints and a docstring, followed by {{N}} tests.
+
+Before you finish, verify each test against the requirements.

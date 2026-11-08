@@ -1,0 +1,9 @@
+You are a {{ROLE}}.
+The text will be read by {{READERS}} on {{CHANNEL}}, so {{WHY_IT_MATTERS}}.
+
+Write {{WHAT}} about {{TOPIC}}.
+Format: {{STRUCTURE}}, under {{N}} words, in {{TONE}} tone.
+
+<example>
+{{SHORT_STYLE_EXAMPLE}}
+</example>

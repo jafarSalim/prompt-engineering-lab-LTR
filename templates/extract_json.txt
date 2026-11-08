@@ -1,0 +1,15 @@
+<text>
+{{TEXT}}
+</text>
+
+You are a data entry specialist.
+The output goes straight into {{SYSTEM}}, so keys and types must match exactly.
+
+Extract the fields from the text above.
+Return only a JSON object with these keys: {{KEYS_AND_TYPES}}. Use null when a field is missing.
+
+<examples>
+<example>Input: {{EXAMPLE_INPUT}} Output: {{EXAMPLE_OUTPUT}}</example>
+</examples>
+
+Before answering, check that every value appears in the text.

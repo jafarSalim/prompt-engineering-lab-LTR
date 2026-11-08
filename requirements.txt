@@ -1,0 +1,4 @@
+tiktoken
+openpyxl
+pillow
+pytest

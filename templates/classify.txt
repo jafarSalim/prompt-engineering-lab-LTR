@@ -1,0 +1,15 @@
+<item>
+{{ITEM}}
+</item>
+
+You are a careful reviewer.
+The labels feed {{DASHBOARD}}, so borderline cases need the right label.
+
+Classify the item above as one of: {{LABELS}}.
+Return one word: the label.
+
+<examples>
+<example>{{EXAMPLE_1}} -> {{LABEL_1}}</example>
+<example>{{EXAMPLE_2}} -> {{LABEL_2}}</example>
+<example>{{EXAMPLE_3}} -> {{LABEL_3}}</example>
+</examples>

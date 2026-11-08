@@ -1,0 +1,17 @@
+<documents>
+<document index="1">
+<source>{{SOURCE_1}}</source>
+<document_content>{{CONTENT_1}}</document_content>
+</document>
+<document index="2">
+<source>{{SOURCE_2}}</source>
+<document_content>{{CONTENT_2}}</document_content>
+</document>
+</documents>
+
+You are a researcher.
+The answer will be used in {{WHERE}}, so every claim must come from the documents.
+First, quote the passages from the documents that answer the question, in <quotes> tags.
+Then answer the question in <answer> tags, in at most 150 words, using only those quotes.
+
+Question: {{QUESTION}}
